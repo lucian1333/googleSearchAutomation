@@ -1,6 +1,7 @@
 package Mentoring.com.test.googleSearch.tests;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
@@ -27,6 +28,7 @@ public class LandingTests {
     public void validateHappyPath () throws InterruptedException {
 
         LandingPage landingPage = new LandingPage(driver);
+    // searchField.sendKeys("SeleniumSelenium", Keys.ENTER);
         Thread.sleep(3000);
         landingPage.signInNoThanks();
         Thread.sleep(3000);

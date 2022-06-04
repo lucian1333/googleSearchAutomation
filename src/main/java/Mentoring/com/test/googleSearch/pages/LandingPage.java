@@ -1,5 +1,6 @@
 package Mentoring.com.test.googleSearch.pages;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -27,9 +28,7 @@ public class LandingPage {
     }
 
     public void searchOnGoogle(String text) throws InterruptedException {
-        this.searchFiled.sendKeys(text);
-        Thread.sleep(2500);
-        this.searchButton.click();
+        this.searchFiled.sendKeys(text , Keys.ENTER);
     }
 
 
